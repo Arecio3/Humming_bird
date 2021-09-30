@@ -3,7 +3,6 @@ import { Link as LR } from 'react-router-dom';
 // import { Link as LS } from 'react-scroll';
 
 export const Nav = styled.nav`
-    background: #000;
     height: 80px;
     /* margin-top: -80px; */
     display: flex;
@@ -30,13 +29,22 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(LR)`
-    color: green;
+    color: #FAF1CF;
     justify-self: flex-start;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     display: flex;
     align-items: center;
     margin-left: 24px;
-    font-weight: bold;
+    font-weight: 200;
     text-decoration: none;
+    line-height: 2.7rem;
+    letter-spacing: .5px;
+`
+
+export const Bird = styled.img`
+    background-color: #FAF1CF;
+    border-radius: 50%;
+    padding: 5px;
+
 `
