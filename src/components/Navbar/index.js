@@ -8,29 +8,30 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
 import { GiHummingbird } from "react-icons/gi";
 import { IconContext } from "react-icons";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
             <IconContext.Provider
-              value={{ color: "#FEFEFE", style: {marginRight: '20px'} }}>
+              value={{ color: "#FEFEFE", style: { marginRight: "20px" } }}
+            >
               <div>
-                <GiHummingbird/>
+                <GiHummingbird />
               </div>
             </IconContext.Provider>
             Hummingbird
             <br /> Lawn Services LLC
           </NavLogo>
           {/* <Bird src={logo} alt="hummingbird" /> */}
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -48,7 +49,7 @@ const Navbar = () => {
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to='/contact'>Hire Me</NavBtnLink>
+            <NavBtnLink to="/contact">Hire Me</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>
