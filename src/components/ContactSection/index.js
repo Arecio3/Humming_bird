@@ -1,12 +1,16 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
-function ContactForm() {
+function ContactForm({ lightBg, id, imgStart, primary, lightText, darkText, buttonLabel, img, alt, topLine, headLine, description, dark, dark2 }) {
   const [state, handleSubmit] = useForm("xleavqba");
   if (state.succeeded) {
       return <p>Thanks for joining!</p>;
   }
   return (
+    <>
+    <div lightBg={lightBg} id={id}>
+      Hello
+      <div imgStart={imgStart}>
       <form onSubmit={handleSubmit}>
       <label htmlFor="email">
         Email Address
@@ -34,6 +38,9 @@ function ContactForm() {
         Submit
       </button>
     </form>
+      </div>
+    </div>
+    </>
   );
 }
 
