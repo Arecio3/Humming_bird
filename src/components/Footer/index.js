@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink } from "./FooterElements";
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterQuote } from "./FooterElements";
 const Footer = () => {
   return (
     <FooterContainer>
@@ -13,24 +13,21 @@ const Footer = () => {
               <FooterLink to="/signin">Terms of Servics</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/discover">How it works</FooterLink>
-              <FooterLink to="/reviews">Reviews</FooterLink>
-              <FooterLink to="/signin">Terms of Servics</FooterLink>
+              <FooterLinkTitle>Our Mission</FooterLinkTitle>
+              <FooterQuote >Give Premium Landscaping Services Fast, Affordable, Secure</FooterQuote> 
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/discover">How it works</FooterLink>
-              <FooterLink to="/reviews">Reviews</FooterLink>
-              <FooterLink to="/signin">Terms of Servics</FooterLink>
+              <FooterLinkTitle>Social Media</FooterLinkTitle>
+              <FooterLink to="/discover">Instagram</FooterLink>
+              <FooterLink to="/reviews">Facebook</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/discover">How it works</FooterLink>
-              <FooterLink to="/reviews">Reviews</FooterLink>
-              <FooterLink to="/signin">Terms of Servics</FooterLink>
+              <FooterLinkTitle>Privacy Policy</FooterLinkTitle>
+              <FooterLink to="/discover">Terms of Use</FooterLink>
+              <FooterLink>Sitemap</FooterLink>
+              <FooterLink>© 2021 HummingBird Lawn Services LLC</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
