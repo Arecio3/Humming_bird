@@ -38,7 +38,7 @@ export const NavLogo = styled(LR)`
     font-size: 2.5rem;
     display: flex;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 10px;
     font-weight: 200;
     text-decoration: none;
     line-height: 2.7rem;
@@ -105,6 +105,11 @@ export const NavLinks = styled(LS)`
     &.active {
         border-bottom: 3px solid #01bf71;
     }
+
+    &:hover {
+        color: #01bf71;
+        transition: all 0.2s ease-in-out;
+    } 
 `
 
 export const NavBtn = styled.nav`
