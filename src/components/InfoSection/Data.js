@@ -50,19 +50,19 @@ export const homeObjThree = {
     primary: false,
     darkText: true
 }
-// export const homeObjFour = {
-//     id: 'contact',
-//     lightBg: true,
-//     lightText: false,
-//     lightTextDesc: false,
-//     topLine: 'HummingBird',
-//     headLine: 'Get your FREE Estimate today!',
-//     description: "Contact me today through our company website for a free estimate! Se habla Español",
-//     buttonLabel: 'Free Estimate',
-//     imgStart: false,
-//     img: pic2,
-//     alt: 'Map',
-//     dark: false,
-//     primary: false,
-//     darkText: true
-// }
+export const homeObjFour = {
+    id: 'contact',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'HummingBird',
+    headLine: 'Get your FREE Estimate today!',
+    description: "Contact me today through our company website for a free estimate! Se habla Español",
+    buttonLabel: 'Free Estimate',
+    imgStart: false,
+    img: pic2,
+    alt: 'Map',
+    dark: false,
+    primary: false,
+    darkText: true
+}
