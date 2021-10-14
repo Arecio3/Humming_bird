@@ -70,3 +70,8 @@ export const FooterQuote = styled.p`
     font-style: italic;
     font-size: 12px;
 `
+
+export const WebsiteRights = styled.small`
+    color: #fff;
+    margin-bottom: 16px;
+`

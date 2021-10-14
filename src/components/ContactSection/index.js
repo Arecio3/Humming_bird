@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import './contact.css';
+import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import pic4 from '../../images/svg-4.svg'
 
 function ContactForm() {
@@ -20,16 +21,23 @@ function ContactForm() {
               <div className="contact-box">
                   <div className="contact-item">
                       <div>
-                          <i className="fa fa-envelope"></i>
-                          <span>Gmail</span>
+                          <FaEnvelope />
+                          <span> Gmail</span>
                           <p>hummingbirdlawnservices@yahoo.com</p>
                       </div>
                   </div>
                   <div className="contact-item">
                       <div>
-                          <i className="fa fa-map-marker-alt"></i>
-                          <span>Located</span>
+                          <FaMapMarkerAlt />
+                          <span> Located</span>
                           <p>Tampa, Florida</p>
+                      </div>
+                  </div>
+                  <div className="contact-item">
+                      <div>
+                          <FaPhone />
+                          <span> Phone Number</span>
+                          <p>(813)562-5766</p>
                       </div>
                   </div>
                   {/* End of Contact Item */}

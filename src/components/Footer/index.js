@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterQuote } from "./FooterElements";
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterQuote, WebsiteRights } from "./FooterElements";
 const Footer = () => {
   return (
     <FooterContainer>
@@ -19,18 +19,13 @@ const Footer = () => {
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Social Media</FooterLinkTitle>
-              <FooterLink to="/discover">Instagram</FooterLink>
-              <FooterLink to="/reviews">Facebook</FooterLink>
-            </FooterLinkItems>
-            <FooterLinkItems>
               <FooterLinkTitle>Privacy Policy</FooterLinkTitle>
               <FooterLink to="/discover">Terms of Use</FooterLink>
               <FooterLink>Sitemap</FooterLink>
-              <FooterLink>© 2021 HummingBird Lawn Services LLC</FooterLink>
+              <WebsiteRights>HummingBird © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
             </FooterLinkItems>
           </FooterLinksWrapper>
-        </FooterLinksContainer>
+        </FooterLinksContainer> 
       </FooterWrap>
     </FooterContainer>
   );
