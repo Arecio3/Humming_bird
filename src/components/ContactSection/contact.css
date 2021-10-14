@@ -21,9 +21,13 @@
 }
 span {
   font-weight: 800;
+  font-size: 13px;
 }
 h4 {
   color: #01bf71;
+}
+p {
+  font-size: 15px;
 }
 
 .contact-title h3 {

@@ -3,7 +3,8 @@ import { Link as LR } from 'react-router-dom';
 import { Link as LS } from 'react-scroll';
 
 export const Nav = styled.nav`
-    height: 95px;
+    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
+    height: 80px;
     margin-top: -80px;
     display: flex;
     justify-content: center;
@@ -12,7 +13,6 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #010606;
 
     
     @media screen and (max-width: 960px) {
@@ -94,7 +94,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LS)`
-    color: #FFF;
+    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -121,7 +121,7 @@ align-items: center;
 }
 `
 
-export const NavBtnLink = styled(LR)`
+export const NavBtnLink = styled(LS)`
 border-radius: 50px;
 background-color: #01bf71;
 white-space: nowrap;
