@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {MdArrowForward,  MdKeyboardArrowRight } from "react-icons/md";
-
+import { Link } from "react-scroll"
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
@@ -112,7 +112,7 @@ export const HeroP = styled.p`
   }
 `;
 
-export const HeroBtnWrapper = styled.div`
+export const HeroBtnWrapper = styled(Link)`
   margin-top: 32px;
   display: flex;
   flex-direction: column;
