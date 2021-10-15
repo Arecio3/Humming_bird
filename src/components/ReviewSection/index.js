@@ -27,7 +27,7 @@ function Review() {
   ];
 
   return (
-    <div id='container'>
+    <div id='reviews' className='container'>
     <div className='title'>
     <h1>Reviews</h1>
     <h5>What customers think</h5>
