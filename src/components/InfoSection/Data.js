@@ -4,27 +4,31 @@ import pic2 from '../../images/svg-3.svg';
 
 export const homeObjOne = {
     id: 'about',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'HummingBird',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'What we offer',
     headLine: 'Premium Lawn Services',
-    description: "Contact me today through our company website for a free estimate! Se habla Español",
+    description: 
+        [
+            "Weed Control, ", "Shrub Trimming, ", "Palm Trimming, ", "Edging, ", "Small Irrigation Repair"
+        ]
+    ,
     buttonLabel: 'Free Estimate',
     imgStart: false,
     img: car,
     alt: 'Car',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: true
 }
 export const homeObjTwo = {
     id: 'discover',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Who are we?',
-    headLine: 'Premium Lawn Services',
+    topLine: 'Reviews',
+    headLine: 'What people have said.',
     description: "Contact me today through our company website for a free estimate! Se habla Español",
     buttonLabel: 'Learn More',
     imgStart: true,
