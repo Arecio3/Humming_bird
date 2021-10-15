@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from "./HeroElements";
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, HeroH2 } from "./HeroElements";
 import { Button } from '../ButtonElements';
 import Video from "../../videos/birdvideo.mp4";
 
@@ -24,6 +24,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
           <HeroH1>Professional Landscaping Buisness</HeroH1>
+          <HeroH2>Tampa, Florida</HeroH2>
           <HeroP>
             Contact me for a <b>FREE</b> estimate. No need for an account!
           </HeroP>

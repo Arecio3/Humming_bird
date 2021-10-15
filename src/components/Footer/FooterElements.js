@@ -68,6 +68,7 @@ export const FooterLink = styled(Link)`
 
 export const FooterQuote = styled.p`
     font-style: italic;
+    color: #fff;
     font-size: 12px;
 `
 
