@@ -178,6 +178,15 @@ h4 {
     width: 430px;
   }
 }
+@media (max-width: 768px) {
+  .submit-btn {
+    position: absolute;
+    right: 15px;
+    background: #fff;
+    border-radius: 30px;
+  }
+}
+
 @media (max-width: 428px) {
   .submit-btn {
     position: absolute;
