@@ -39,9 +39,6 @@ export const VideoBg = styled.video`
   object-fit: cover;
   background: #232a34;
 
-  /* @media screen and (max-width: 428px) {
-    display: none;
-  } */
 `;
 
 export const MobileImg = styled.img`

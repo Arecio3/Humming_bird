@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { Link } from 'react-scroll'
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
@@ -79,7 +79,7 @@ export const Subtitle = styled.p`
      color: ${({ darkText }) => (darkText ? "black" : "#fff")};
 `
 
-export const BtnWrap = styled.div`
+export const BtnWrap = styled(Link)`
     display: flex;
     justify-content: flex-start;
 `

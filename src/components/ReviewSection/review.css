@@ -38,9 +38,23 @@ h5 {
   color: #01bf71;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     #carousel {
-      height: 55vh;
+      height: 60vh;
       width: 100vw;
     }
+    .container {
+      margin-right: 60px;
+    }
+
+    .title {
+      margin-left: 80px;
+    }
+}
+@media (max-width: 480px) {
+    #carousel {
+      height: 65vh;
+      width: 100vw;
+    }
+
 }

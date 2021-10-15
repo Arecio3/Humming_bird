@@ -50,13 +50,12 @@ export const NavLogo = styled(LR)`
     @media screen and (max-width: 428px) {
         font-size: 25px;
     }
+
+    &:hover {
+        color: #fff;
+    }
 `
 
-// export const Bird = styled.img`
-//     background-color: #FAF1CF;
-//     border-radius: 50%;
-//     padding: 5px;
-// `
 export const MobileIcon = styled.div`
     display: none;
 

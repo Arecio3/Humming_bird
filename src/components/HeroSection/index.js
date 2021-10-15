@@ -29,7 +29,7 @@ const HeroSection = () => {
             Contact me for a <b>FREE</b> estimate. No need for an account!
           </HeroP>
           <HeroBtnWrapper>
-              <Button onMouseEnter={onHover} onMouseLeave={onHover} to='contact' primary="true" dark='true'>Get Started {hover ? <ArrowForward /> : <ArrowRight />}</Button>
+              <Button to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark='true'>Get Started {hover ? <ArrowForward /> : <ArrowRight />}</Button>
           </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
