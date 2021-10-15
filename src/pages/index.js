@@ -7,7 +7,7 @@ import ContactSection from '../components/ContactSection'
 import Services from '../components/Services'
 import Footer from '../components/Footer'
 import Review from '../components/ReviewSection'
-import { homeObjOne, homeObjThree } from '../components/InfoSection/Data'
+import { homeObjOne } from '../components/InfoSection/Data'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,7 +25,6 @@ const Home = () => {
           <Review />
           {/* <InfoSection {...homeObjTwo}/> */}
           <Services />
-          <InfoSection {...homeObjThree}/>
           {/* <InfoSection {...homeObjFour}/> */}
           <ContactSection/>
           <Footer/>

@@ -5,19 +5,20 @@
 }
 
 .container {
-  background: #010606;
+  background: #fff;
 
 }
 
 h3 {
-  color: white;
+  color: black;
   font-style: italic;
 }
-p { 
-  color: black;
+
+#name { 
+  color: #01bf71;
 }
 h5 {
-  color: white;
+  color: black;
 }
 .review-img {
   opacity: .8;
@@ -35,4 +36,11 @@ h5 {
 
 .title > h1 {
   color: #01bf71;
+}
+
+@media (max-width: 480px) {
+    #carousel {
+      height: 55vh;
+      width: 100vw;
+    }
 }

@@ -58,17 +58,17 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="reviews" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Reviews</NavLinks>
+              <NavLinks to="reviews" smooth={true} duration={100} spy={true} exact='true' offset={-80}>Reviews</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Services</NavLinks>
+              <NavLinks to="services" smooth={true} duration={100} spy={true} exact='true' offset={-80}>Services</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact</NavLinks>
+              <NavLinks to="contact" smooth={true} duration={100} spy={true} exact='true' offset={-80}>Contact</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Hire Me</NavBtnLink>
+            <NavBtnLink to="contact" smooth={true} duration={100} spy={true} exact='true' offset={-80}>Hire Me</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

@@ -38,7 +38,7 @@ function Review() {
             <img className="d-block w-100 review-img" src={d.img} alt={d.id} />
             <Carousel.Caption className="caption">
               <h3>{d.quote}</h3>
-              <p>{d.name}</p>
+              <p id="name">{d.name}</p>
             </Carousel.Caption>
           </Carousel.Item>
         ))}

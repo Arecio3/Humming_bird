@@ -23,21 +23,21 @@ function ContactForm() {
                       <div>
                           <FaEnvelope style={{color: '#01bf71'}}/>
                           <span> Gmail</span>
-                          <p>hummingbirdlawnservices@yahoo.com</p>
+                          <p className="contact-info">hummingbirdlawnservices@yahoo.com</p>
                       </div>
                   </div>
                   <div className="contact-item">
                       <div>
                           <FaMapMarkerAlt style={{color: '#01bf71'}}/>
                           <span> Located</span>
-                          <p>Tampa, Florida</p>
+                          <p className="contact-info">Tampa, Florida</p>
                       </div>
                   </div>
                   <div className="contact-item">
                       <div>
                           <FaPhone style={{color: '#01bf71'}}/>
                           <span> Phone Number</span>
-                          <p>(813) 562-5766</p>
+                          <p className="contact-info">(813) 562-5766</p>
                       </div>
                   </div>
                   {/* End of Contact Item */}
