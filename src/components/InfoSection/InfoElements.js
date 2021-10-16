@@ -87,10 +87,20 @@ export const BtnWrap = styled(Link)`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+
+    @media screen and (max-width: 480px) {
+        max-width: 355px;
+        height: 50%;
+    }
 `
 
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+
+    @media screen and (max-width: 480px) {
+        margin: 0 0 40px 0;
+
+    }
 `

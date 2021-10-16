@@ -45,6 +45,9 @@ export const SidebarMenu = styled.ul`
     @media screen and (max-width: 768px) {
         grid-template-rows: repeat(6,60px);
     }
+    @media screen and (max-width: 480px) {
+        grid-template-rows: repeat(5,60px);
+    }
 `
 
 export const SidebarLink = styled(LS)`
@@ -68,6 +71,10 @@ export const SidebarLink = styled(LS)`
 export const SideBtnWrap = styled.div`
     display: flex;
     justify-content: center;
+
+    @media  screen and (max-width: 480px) {
+        margin-left: 30px;
+    }
 `
 
 export const SidebarRoute = styled(LS)`

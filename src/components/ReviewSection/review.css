@@ -53,8 +53,16 @@ h5 {
 }
 @media (max-width: 480px) {
     #carousel {
-      height: 65vh;
-      width: 100vw;
+      height: 50vh;
+      width: 100%;
+    }
+
+    .container {
+      padding-top: 40px;
+    }
+
+    .title {
+      margin-left: 20px;
     }
 
 }
