@@ -39,23 +39,23 @@ export const VideoBg = styled.video`
   object-fit: cover;
   background: #232a34;
 
+  @media screen and (max-width: 480px) { 
+    display: none;
+  }
 `;
 
-export const MobileImg = styled.img`
+export const Bird = styled.img`
   display: none;
 
-  /* @media screen and (max-width: 428px) {
-    position: absolute;
+  @media screen and (max-width: 480px) {
     display: flex;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow-y: hidden;
-    object-fit: contain;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  } */
+    overflow-x: hidden;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -79,6 +79,7 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+    padding-bottom: 12%;
   }
 `;
 export const HeroH2 = styled.h2`

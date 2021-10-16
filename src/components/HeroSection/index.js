@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, HeroH2 } from "./HeroElements";
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight, HeroH2, Bird } from "./HeroElements";
 import { Button } from '../ButtonElements';
 import Video from "../../videos/birdvideo.mp4";
-
+import bird from '../../images/bird2.jpg'
 const HeroSection = () => {
     const [hover, setHover] = useState(false);
 
@@ -21,6 +21,7 @@ const HeroSection = () => {
           src={Video}
           type="video/mp4"
         />
+        <Bird loading="lazy" src={bird} />
       </HeroBg>
       <HeroContent>
           <HeroH1>Professional Landscaping Buisness</HeroH1>
