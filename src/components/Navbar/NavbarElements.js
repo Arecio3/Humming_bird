@@ -114,6 +114,7 @@ export const NavLinks = styled(LS)`
 export const NavBtn = styled.nav`
 display: flex;
 align-items: center;
+margin-left: 7px;
 
 @media screen and (max-width: 768px) {
     display: none;
