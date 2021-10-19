@@ -66,6 +66,10 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    padding: 3px 15px;
+  }
 `;
 
 export const HeroH1 = styled.h1`
@@ -79,7 +83,7 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
-    padding-bottom: 12%;
+    margin-top: -135px;
   }
 `;
 export const HeroH2 = styled.h2`
@@ -94,6 +98,8 @@ export const HeroH2 = styled.h2`
 
   @media screen and (max-width: 480px) {
     font-size: 22px;
+    margin-top: 5%;
+    margin-bottom: 25%;
   }
 `;
 
@@ -118,6 +124,10 @@ export const HeroBtnWrapper = styled(Link)`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 65px;
+  }
 `;
 
 export const ArrowForward = styled(MdArrowForward)`

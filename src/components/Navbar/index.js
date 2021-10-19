@@ -14,10 +14,13 @@ import { FaBars } from "react-icons/fa";
 import { GiHummingbird } from "react-icons/gi";
 import { IconContext } from "react-icons";
 import { animateScroll as scroll} from 'react-scroll'
-
+import { useTranslation } from 'react-i18next';
+import i18n  from "../../i18n";
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
-
+  
+  const { t } = useTranslation();
+  
   const changeNav = () => {
     if(window.scrollY >= 80) {
       setScrollNav(true);
@@ -25,6 +28,7 @@ const Navbar = ({ toggle }) => {
       setScrollNav(false);
     }
   };
+
 
   useEffect(() => {
     window.addEventListener('scroll', changeNav);
@@ -35,6 +39,7 @@ const Navbar = ({ toggle }) => {
   }
 
   return (
+    
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
@@ -47,7 +52,7 @@ const Navbar = ({ toggle }) => {
               </div>
             </IconContext.Provider>
             Hummingbird
-            <br /> Lawn Services LLC
+            <br /> {t('LawnServices')}
           </NavLogo>
           {/* <Bird src={logo} alt="hummingbird" /> */}
           <MobileIcon onClick={toggle}>
@@ -55,21 +60,25 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>About</NavLinks>
+              <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('About')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="reviews" smooth={true} duration={100} spy={true} exact='true' offset={-80}>Reviews</NavLinks>
+              <NavLinks to="reviews" smooth={true} duration={100} spy={true} exact='true' offset={-80}>{t('Reviews')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="services" smooth={true} duration={100} spy={true} exact='true' offset={-80}>Services</NavLinks>
+              <NavLinks to="services" smooth={true} duration={100} spy={true} exact='true' offset={-80}>{t('Services')}</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact" smooth={true} duration={100} spy={true} exact='true' offset={-80}>Contact</NavLinks>
+              <NavLinks to="contact" smooth={true} duration={100} spy={true} exact='true' offset={-80}>{t('Contact')}</NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="contact" smooth={true} duration={100} spy={true} exact='true' offset={-80}>Hire Me</NavBtnLink>
+            <NavBtnLink to="contact" smooth={true} duration={100} spy={true} exact='true' offset={-80}>{t('HireMe')}</NavBtnLink>
           </NavBtn>
+          <div>
+              <button onClick={() => i18n.changeLanguage('es')}>ES</button>
+              <button onClick={() => i18n.changeLanguage('en')}>EN</button>
+            </div>
         </NavbarContainer>
       </Nav>
     </>

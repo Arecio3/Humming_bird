@@ -3,12 +3,15 @@ import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrap
 import { Button } from '../ButtonElements';
 import Video from "../../videos/birdvideo.mp4";
 import bird from '../../images/bird2.jpg'
-const HeroSection = () => {
-    const [hover, setHover] = useState(false);
+import { useTranslation } from 'react-i18next';
 
-    const onHover = () => {
-        setHover(!hover);
-    }
+const HeroSection = () => {
+  const [hover, setHover] = useState(false);
+  
+  const onHover = () => {
+    setHover(!hover);
+  }
+  const { t } = useTranslation();
 
   return (
     <HeroContainer>
@@ -24,13 +27,13 @@ const HeroSection = () => {
         <Bird loading="lazy" src={bird} />
       </HeroBg>
       <HeroContent>
-          <HeroH1>Professional Landscaping Buisness</HeroH1>
+          <HeroH1>{t('HeroTitle')}</HeroH1>
           <HeroH2>Tampa, Florida</HeroH2>
           <HeroP>
-            Contact me for a <b>FREE</b> estimate. No need for an account!
+            {t('HeroP')}
           </HeroP>
           <HeroBtnWrapper>
-              <Button to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark='true'>Get Started {hover ? <ArrowForward /> : <ArrowRight />}</Button>
+              <Button to="contact" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark='true'>{t('GetStarted')} {hover ? <ArrowForward /> : <ArrowRight />}</Button>
           </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
