@@ -20,6 +20,7 @@ import { animateScroll as scroll} from 'react-scroll'
 import { useTranslation } from 'react-i18next';
 import i18n  from "../../i18n";
 import "flag-icon-css/css/flag-icon.min.css"
+
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   
