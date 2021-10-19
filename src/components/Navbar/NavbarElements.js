@@ -124,7 +124,7 @@ export const NavBtnLink = styled(LS)`
 border-radius: 50px;
 background-color: #01bf71;
 white-space: nowrap;
-padding: 10px 22px;
+padding: 10px 15px;
 color: #010606;
 outline: none;
 border: none;
@@ -136,5 +136,30 @@ text-decoration: none;
     transition: all 0.2s ease-in-out;
     background-color: #02FA93;
     color: #010606;
+}
+`
+export const LangContainer = styled.div`
+justify-content: space-between;
+@media screen and (max-width:480px) {
+    position: absolute;
+    right: 55px;
+}
+`
+
+export const LangBut = styled.span`
+margin: 5px;
+cursor: pointer;
+
+@media screen and (max-width: 480px) {
+    display: none;
+}
+`
+
+export const MobileLangBut = styled.span`
+display: none;
+
+
+@media screen and (max-width: 480px) {
+    display: contents;
 }
 `

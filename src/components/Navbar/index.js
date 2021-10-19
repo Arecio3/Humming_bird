@@ -9,6 +9,9 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  LangContainer,
+  LangBut,
+  MobileLangBut
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
 import { GiHummingbird } from "react-icons/gi";
@@ -16,6 +19,7 @@ import { IconContext } from "react-icons";
 import { animateScroll as scroll} from 'react-scroll'
 import { useTranslation } from 'react-i18next';
 import i18n  from "../../i18n";
+import "flag-icon-css/css/flag-icon.min.css"
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
   
@@ -75,10 +79,12 @@ const Navbar = ({ toggle }) => {
           <NavBtn>
             <NavBtnLink to="contact" smooth={true} duration={100} spy={true} exact='true' offset={-80}>{t('HireMe')}</NavBtnLink>
           </NavBtn>
-          <div>
-              <button onClick={() => i18n.changeLanguage('es')}>ES</button>
-              <button onClick={() => i18n.changeLanguage('en')}>EN</button>
-            </div>
+          <LangContainer>
+              <LangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-mx p-3"></span></LangBut>
+              <LangBut onClick={() => i18n.changeLanguage('en')}><span className="flag-icon flag-icon-us p-3"></span></LangBut>
+              <MobileLangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-mx mx-1"></span></MobileLangBut>
+              <MobileLangBut onClick={() => i18n.changeLanguage('en')}><span className="flag-icon flag-icon-us mx-0.9"></span></MobileLangBut>
+            </LangContainer>
         </NavbarContainer>
       </Nav>
     </>
