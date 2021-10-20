@@ -39,14 +39,14 @@ function ContactForm() {
                   <div className="contact-item">
                       <div>
                           <FaMapMarkerAlt style={{color: '#01bf71'}}/>
-                          <span> Located</span>
+                          <span> {t("Location")}</span>
                           <p className="contact-info">Tampa, Florida</p>
                       </div>
                   </div>
                   <div className="contact-item">
                       <div>
                           <FaPhone style={{color: '#01bf71'}}/>
-                          <span> Phone Number</span>
+                          <span> {t('Phone')}</span>
                           <p className="contact-info">(813) 562-5766</p>
                       </div>
                   </div>

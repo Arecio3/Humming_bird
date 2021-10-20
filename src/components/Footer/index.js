@@ -1,28 +1,32 @@
 import React from "react";
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterQuote, WebsiteRights } from "./FooterElements";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+
+  const { t } = useTranslation();
+
   return (
     <FooterContainer>
       <FooterWrap>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/discover">How it works</FooterLink>
-              <FooterLink to="/reviews">Reviews</FooterLink>
-              <FooterLink to="/signin">Terms of Servics</FooterLink>
+              <FooterLinkTitle>{t('AboutUs')}</FooterLinkTitle>
+              <FooterLink to="/discover">{t('HowWorks')}</FooterLink>
+              <FooterLink to="/reviews">{t('Reviews')}</FooterLink>
+              <FooterLink to="/signin">{t('Terms')}</FooterLink>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Our Mission</FooterLinkTitle>
-              <FooterQuote >Give Premium Landscaping Services Fast, Affordable, Secure</FooterQuote> 
+              <FooterLinkTitle>{t('OurMission')}</FooterLinkTitle>
+              <FooterQuote >{t('Mission')}</FooterQuote> 
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Privacy Policy</FooterLinkTitle>
-              <FooterLink to="/discover">Terms of Use</FooterLink>
-              <FooterLink>Sitemap</FooterLink>
+              <FooterLinkTitle>{t('Privacy')}</FooterLinkTitle>
+              <FooterLink to="/discover">{('TermsofUse')}</FooterLink>
+              <FooterLink>{t('Sitemap')}</FooterLink>
               <WebsiteRights>HummingBird © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
             </FooterLinkItems>
           </FooterLinksWrapper>

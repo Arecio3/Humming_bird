@@ -4,9 +4,9 @@
         "Reviews": "Reviews",
         "Services": "Services",
         "Contact": "Contact",
-        "HireMe": "Hire Me",
+        "HireMe": "Start here",
         "HeroTitle": "Professional Landscaping Business",
-        "HeroP": "Contact me for a FREE estimate. NO account needed!",
+        "HeroP": "Contact for FREE estimate. No account needed!",
         "LawnServices": "Lawn Services LLC",
         "GetStarted": "Get Started",
         "TopLine": "What we offer",
@@ -27,7 +27,16 @@
         "GetTouch": "Get In Touch",
         "LeaveEmail": "Make sure to leave your Email!",
         "MessageSent": "Message Sent!",
-        "SendMessage": "Send Message"
-
+        "SendMessage": "Send Message",
+        "Location": "Location",
+        "Phone": "Phone Number",
+        "AboutUs": "About Us",
+        "HowWorks": "How it works",
+        "Terms": "Terms of Services",
+        "OurMission": "Our Mission",
+        "Mission": "Give Premium Landscaping Services Fast, Affordable, Secure",
+        "Privacy": "Privacy Policy",
+        "TermsOfUse": "Terms of Use",
+        "Sitemap": "Sitemap"
 
 }

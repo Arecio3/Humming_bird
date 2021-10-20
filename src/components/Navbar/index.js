@@ -81,9 +81,9 @@ const Navbar = ({ toggle }) => {
             <NavBtnLink to="contact" smooth={true} duration={100} spy={true} exact='true' offset={-80}>{t('HireMe')}</NavBtnLink>
           </NavBtn>
           <LangContainer>
-              <LangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-mx p-3"></span></LangBut>
+              <LangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-pr p-3"></span></LangBut>
               <LangBut onClick={() => i18n.changeLanguage('en')}><span className="flag-icon flag-icon-us p-3"></span></LangBut>
-              <MobileLangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-mx mx-2"></span></MobileLangBut>
+              <MobileLangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-pr mx-2"></span></MobileLangBut>
               <MobileLangBut onClick={() => i18n.changeLanguage('en')}><span className="flag-icon flag-icon-us"></span></MobileLangBut>
             </LangContainer>
         </NavbarContainer>
