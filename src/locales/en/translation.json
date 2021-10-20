@@ -23,7 +23,11 @@
         "BiLingual": "Bi-Lingual",
         "BiLingualP": "We speak both Spanish and English.",
         "Mobile": "Mobile",
-        "MobileP": "Reliable transition and brand new equipment."
+        "MobileP": "Reliable transition and brand new equipment.",
+        "GetTouch": "Get In Touch",
+        "LeaveEmail": "Make sure to leave your Email!",
+        "MessageSent": "Message Sent!",
+        "SendMessage": "Send Message"
 
 
 }

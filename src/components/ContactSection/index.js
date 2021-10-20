@@ -3,19 +3,29 @@ import { useForm, ValidationError } from '@formspree/react';
 import './contact.css';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import pic4 from '../../images/svg-4.svg'
+import { useTranslation } from 'react-i18next';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xleavqba");
+  
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+    window.onbeforeunload = () => {
+        for(const form of document.getElementsByTagName('form')) {
+          form.reset();
+        }
+      }
   }
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const { t } = useTranslation();
+
   return (
       <section id='contact'>
           <div className="contact-container">
               <div className="contact-header">
                   <div className="contact-title">
-                      <h1>Contact</h1>
-                      <h3>Get In Touch</h3>
+                      <h1>{t('Contact')}</h1>
+                      <h3>{t('GetTouch')}</h3>
                   </div>
               </div>
               <div className="contact-box">
@@ -42,7 +52,7 @@ function ContactForm() {
                   </div>
                   {/* End of Contact Item */}
               </div>
-              <div className="psa"><h4>Make sure to leave your Email!</h4></div>
+              <div className="psa"><h4>{t('LeaveEmail')}</h4></div>
               <div className="contact-box">
                   <div className="contact-form">
                       <form onSubmit={handleSubmit}>
@@ -103,9 +113,9 @@ function ContactForm() {
                           <div className="contact-box">
                               <div className="submit-btn">
                                  {state.succeeded ? <button type="submit">
-                                      Message Sent!
-                                  </button> : <button type="submit" disabled={state.submitting}>
-                                      Send Message
+                                      {t('MessageSent')}
+                                  </button> : <button type="submit">
+                                      {t('SendMessage')}
                                   </button>}
                               </div>
                           </div>

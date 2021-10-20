@@ -23,6 +23,11 @@
         "BiLingual": "Bilingüe",
         "BiLingualP": "Nosotros hablamos español y ingles",
         "Mobile": "Móvil",
-        "MobileP": "Transición confiable y equipo nuevo."
+        "MobileP": "Transición confiable y equipo nuevo.",
+        "GetTouch": "Ponerse en contacto",
+        "LeaveEmail": "¡Asegúrate de dejar tu correo electrónico!",
+        "MessageSent": "¡Mensaje enviado!",
+        "SendMessage": "Enviar mensaje"
+
 
 }
