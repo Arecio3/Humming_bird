@@ -49,6 +49,7 @@ export const NavLogo = styled(LR)`
     }
     @media screen and (max-width: 428px) {
         font-size: 25px;
+        line-height: 2.4rem;
     }
 
     &:hover {
@@ -140,10 +141,9 @@ text-decoration: none;
 }
 `
 export const LangContainer = styled.div`
-justify-content: space-between;
 @media screen and (max-width:480px) {
     position: absolute;
-    right: 55px;
+    right: 50px;
 }
 `
 
@@ -156,11 +156,11 @@ cursor: pointer;
 }
 `
 
-export const MobileLangBut = styled.span`
+export const MobileLangBut = styled.div`
 display: none;
-
-
 @media screen and (max-width: 480px) {
     display: contents;
+    color: #fff;
+    margin: 10px;
 }
 `

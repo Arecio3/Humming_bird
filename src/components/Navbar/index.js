@@ -83,8 +83,8 @@ const Navbar = ({ toggle }) => {
           <LangContainer>
               <LangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-mx p-3"></span></LangBut>
               <LangBut onClick={() => i18n.changeLanguage('en')}><span className="flag-icon flag-icon-us p-3"></span></LangBut>
-              <MobileLangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-mx mx-1"></span></MobileLangBut>
-              <MobileLangBut onClick={() => i18n.changeLanguage('en')}><span className="flag-icon flag-icon-us mx-0.9"></span></MobileLangBut>
+              <MobileLangBut onClick={() => i18n.changeLanguage('es')}><span className="flag-icon flag-icon-mx mx-2"></span></MobileLangBut>
+              <MobileLangBut onClick={() => i18n.changeLanguage('en')}><span className="flag-icon flag-icon-us"></span></MobileLangBut>
             </LangContainer>
         </NavbarContainer>
       </Nav>
