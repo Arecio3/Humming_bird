@@ -1,7 +1,11 @@
 import React from "react";
 import { SidebarContainer, CloseIcon, Icon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from "./SidebarElements";
+import { useTranslation } from 'react-i18next';
 
 const Sidebar = ({ isOpen, toggle }) => {
+
+  const { t } = useTranslation();
+
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -9,13 +13,13 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-          <SidebarLink to="reviews" onClick={toggle}>Reviews</SidebarLink>
-          <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
-          <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
+          <SidebarLink to="about" onClick={toggle}>{t('About')}</SidebarLink>
+          <SidebarLink to="reviews" onClick={toggle}>{t('Reviews')}</SidebarLink>
+          <SidebarLink to="services" onClick={toggle}>{t('Services')}</SidebarLink>
+          <SidebarLink to="contact" onClick={toggle}>{t('Contact')}</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-            <SidebarRoute to="contact" onClick={toggle}>Hire Me</SidebarRoute>
+            <SidebarRoute to="contact" onClick={toggle}>{t('HireMe')}</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
