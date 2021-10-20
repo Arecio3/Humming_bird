@@ -57,14 +57,18 @@ h5 {
     #carousel {
       height: 50vh;
       width: 100%;
+      margin-top: 15%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .container {
-      padding-top: 40px;
+      padding-top: 45px;
     }
 
     .title {
       margin-left: 20px;
+      margin-top: 0;
     }
 
 }
